@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/createAccountRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/youtube_white">
+
+    <TextView
+        android:id="@+id/txtCreateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/youtube_red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/editFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:padding="14dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/youtube_dark_gray"
+        app:layout_constraintTop_toBottomOf="@id/txtCreateTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <EditText
+        android:id="@+id/editCreateUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="14dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/youtube_dark_gray"
+        app:layout_constraintTop_toBottomOf="@id/editFullName"
+        app:layout_constraintStart_toStartOf="@id/editFullName"
+        app:layout_constraintEnd_toEndOf="@id/editFullName"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/editCreatePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/youtube_dark_gray"
+        app:layout_constraintTop_toBottomOf="@id/editCreateUsername"
+        app:layout_constraintStart_toStartOf="@id/editCreateUsername"
+        app:layout_constraintEnd_toEndOf="@id/editCreateUsername"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/youtube_dark_gray"
+        app:layout_constraintTop_toBottomOf="@id/editCreatePassword"
+        app:layout_constraintStart_toStartOf="@id/editCreatePassword"
+        app:layout_constraintEnd_toEndOf="@id/editCreatePassword"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textStyle="bold"
+        android:textColor="@color/youtube_white"
+        android:backgroundTint="@color/youtube_red"
+        app:layout_constraintTop_toBottomOf="@id/editConfirmPassword"
+        app:layout_constraintStart_toStartOf="@id/editConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@id/editConfirmPassword"
+        android:layout_marginTop="26dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
