@@ -3,6 +3,10 @@
     <style name="Base.Theme.IStream_App" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/youtube_red</item>
+        <item name="colorPrimaryContainer">@color/youtube_dark_red</item>
+        <item name="android:statusBarColor">@color/youtube_red</item>
+        <item name="android:navigationBarColor">@color/black</item>
     </style>
 
     <style name="Theme.IStream_App" parent="Base.Theme.IStream_App" />
