@@ -5,25 +5,27 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 /*
- * This entity represents one user in our Room database.
- * Each username must be unique, so I added an index with unique = true.
+ * I am creating an Entity class for Room database.
+ * This class represents a single user record in my database.
+ * I have also ensured that the username is unique by adding an index.
  */
 @Entity(
-        tableName = "app_users",
-        indices = {@Index(value = {"username"}, unique = true)}
+        tableName = "app_users", // I am naming my table as "app_users"
+        indices = {@Index(value = {"username"}, unique = true)} // I am making username unique so no duplicate users can exist
 )
 public class AppUser {
 
     @PrimaryKey(autoGenerate = true)
-    public int userId;
+    public int userId; // I am using this as a unique ID for each user and letting Room auto-generate it
 
-    public String fullName;
-    public String username;
-    public String password;
+    public String fullName; // I am storing the full name of the user
+    public String username; // I am storing the username (must be unique)
+    public String password; // I am storing the password for login purposes
 
+    // I am creating a constructor to initialize user details when a new user is created
     public AppUser(String fullName, String username, String password) {
-        this.fullName = fullName;
-        this.username = username;
-        this.password = password;
+        this.fullName = fullName; // assigning full name
+        this.username = username; // assigning username
+        this.password = password; // assigning password
     }
 }
